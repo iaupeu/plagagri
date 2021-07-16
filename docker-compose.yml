@@ -1,0 +1,14 @@
+---
+# ----------------------------------------------------------------------------------------
+# -- Docs: https://github.com/okwrtdsh/anaconda3 --
+# ----------------------------------------------------------------------------------------
+version: '3'
+services:
+  jupyter:
+    image: okwrtdsh/anaconda3:keras-cpu
+    ports:
+      - '8887:8888'
+    tty: true
+    volumes:
+      - ./notebooks:/src/notebooks
+...
